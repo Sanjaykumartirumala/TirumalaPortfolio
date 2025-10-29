@@ -4,68 +4,87 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanjay Kumar Tirumala — Portfolio</title>
+  <title>Sanjay's Portfolio</title>
+
+  <!-- Boxicons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- Header -->
   <header class="header">
     <a href="#" class="logo">Sanjay's Portfolio</a>
     <i class='bx bx-menu' id="menu-icon"></i>
+
     <nav class="navbar">
       <a href="#home" class="active">HOME</a>
       <a href="#about">ABOUT</a>
-      <a href="#experience">EXPERIENCE</a>
-      <a href="#projects">PROJECTS</a>
       <a href="#certifications">CERTIFICATIONS</a>
       <a href="#achievements">ACHIEVEMENTS</a>
+      <a href="#projects">PROJECTS</a>
       <a href="#contact">CONTACT</a>
     </nav>
   </header>
 
+  <!-- Home -->
   <section class="home" id="home">
     <div class="home-content">
       <h3>Hello,</h3>
       <h1>I'm <span>SANJAY KUMAR TIRUMALA</span></h1>
       <h2>A <span class="multiple-text"></span></h2>
       <p>“Things could be messy and clumsy the first time you try something. But with time, the mess starts to disappear.”</p>
-      <p>EAT · CODE · LEARN · BUILD · REPEAT</p>
+      <p>EAT · CODE · PLAY · SLEEP · REPEAT</p>
+
       <div class="social-media">
         <a href="https://instagram.com/sanjaykumar____23"><i class='bx bxl-instagram-alt'></i></a>
-        <a href="https://www.linkedin.com/in/sanjaykumartirumala"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://www.linkedin.com/in/tirumala-sanjay-kumar-624369205"><i class='bx bxl-linkedin-square'></i></a>
         <a href="https://github.com/Sanjaykumartirumala"><i class='bx bxl-github'></i></a>
       </div>
+
       <a href="resume/SanjayKumarTirumalaResume.pdf" class="btn">DOWNLOAD RESUME</a>
     </div>
+
     <div class="home-img">
       <img src="sk.jpg" alt="Sanjay Kumar">
     </div>
   </section>
 
+  <!-- About -->
   <section class="about" id="about">
     <div class="about-img">
       <img src="sk1.jpg" alt="About Sanjay" height="400" width="400">
     </div>
+
     <div class="about-content">
       <h2 class="heading"><span>About</span> Me</h2>
-      <p>I am Sanjay Kumar Tirumala, a passionate Software Developer and AI Trainer with expertise in Java, Spring Boot, REST APIs, and backend systems. I thrive in Agile environments and enjoy building scalable, secure, and high-performance applications.</p>
+      <p>
+        Hey visitor! 👋 <br>
+        I'm Sanjay Kumar Tirumala, a passionate Software Developer and AI Trainer specializing in Java, Spring Boot, and Web Technologies.
+        I enjoy building scalable, high-performance web applications and learning emerging technologies.
+      </p>
+
       <h2>Profile</h2>
       <ul>
         <li><strong>Name:</strong> Sanjay Kumar Tirumala</li>
         <li><strong>Branch:</strong> Computer Science & Engineering</li>
-        <li><strong>College:</strong> Swarnandhra Institute of Engineering & Technology</li>
+        <li><strong>College:</strong> Swarnandhra Institute of Engineering and Technology</li>
         <li><strong>University:</strong> JNTUK</li>
       </ul>
+
       <h2 class="heading">My <span>Skills</span></h2>
       <ul>
         <li>Java <progress value="90" max="100"></progress></li>
         <li>Spring Boot <progress value="85" max="100"></progress></li>
         <li>Python <progress value="80" max="100"></progress></li>
+        <li>HTML / CSS / JS <progress value="85" max="100"></progress></li>
         <li>React.js / Node.js <progress value="75" max="100"></progress></li>
         <li>SQL & MongoDB <progress value="80" max="100"></progress></li>
-        <li>HTML / CSS / JS <progress value="85" max="100"></progress></li>
       </ul>
+
       <h2>Tools & Technologies</h2>
       <ul>
         <li>Git & GitHub</li>
@@ -76,66 +95,63 @@
     </div>
   </section>
 
-  <section class="experience" id="experience">
-    <h2 class="heading">My <span>Experience</span></h2>
-    <div class="experience-container">
-      <div class="experience-box">
-        <h3>AI Trainer — Outlier</h3>
-        <p><em>Dec 2024 – Jul 2025</em></p>
-        <p>Trained AI models in coding (Java, Python, C), NLP, and image processing. Applied mathematics and ML techniques to optimize performance.</p>
+  <!-- Certifications -->
+  <section class="certifications" id="certifications">
+    <h2 class="heading">My <span>Certifications</span></h2>
+
+    <div class="certifications-container">
+      <div class="certifications-box">
+        <img src="web.jpg" alt="HTML Certification" height="180" width="270">
+        <a href="#" class="btn">HTML</a>
+        <p>Completed HTML course and certification from FreeCodeCamp.</p>
       </div>
-      <div class="experience-box">
-        <h3>Java Full Stack Intern — Datavalley</h3>
-        <p><em>Jan 2024 – Apr 2024</em></p>
-        <p>Built backend services with Spring Boot, integrated REST APIs, and improved DB performance in Agile teams.</p>
+
+      <div class="certifications-box">
+        <img src="FMC.jpg" alt="Mean Stack Certification" height="270" width="180">
+        <a href="#" class="btn">Mean Stack</a>
+        <p>Certified in Java MEAN Stack Development by First Man Academy.</p>
+      </div>
+
+      <div class="certifications-box">
+        <img src="ml.jpg" alt="Machine Learning Certification" height="180" width="270">
+        <a href="#" class="btn">Machine Learning</a>
+        <p>Completed Machine Learning using Python by Verzeo.</p>
       </div>
     </div>
   </section>
 
+  <!-- Achievements -->
+  <section class="achievements" id="achievements">
+    <h2 class="heading">My <span>Achievements</span></h2>
+
+    <div class="achievements-container">
+      <div class="achievements-box">
+        <img src="kwest.jpg" alt="Math Olympiad Achievement" height="180" width="270">
+        <p>Ranked 1146 in Math Olympiad conducted by KWEST Foundation.</p>
+      </div>
+
+      <div class="achievements-box">
+        <img src="Silver.jpg" alt="International Math Olympiad Achievement" height="270" width="180">
+        <p>STATE RANK 390 & INTERNATIONAL RANK 9360 in the 6th International Math Olympiad (2013).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
   <section class="projects" id="projects">
     <h2 class="heading">My <span>Projects</span></h2>
     <ul>
-      <li><strong>Secure Search Scheme:</strong> Java Spring Boot project with AES encryption, SHA-256 hashing, and REST APIs.</li>
-      <li><strong>Hangman Game & Dancing Robot:</strong> Fun interactive projects using JavaScript and CSS animations.</li>
-      <li><strong>Beach Resort Website:</strong> Responsive booking prototype with HTML, CSS, and JS.</li>
+      <li><strong>Secure Search Scheme:</strong> Spring Boot + MongoDB project with AES encryption.</li>
+      <li><strong>Hangman Game:</strong> Interactive JavaScript-based game.</li>
+      <li><strong>Dancing Robot:</strong> Fun CSS animation project.</li>
+      <li><strong>Beach Resort Website:</strong> Booking and management portal using HTML, CSS, and JS.</li>
     </ul>
   </section>
 
-  <section class="certifications" id="certifications">
-    <h2 class="heading">My <span>Certifications</span></h2>
-    <div class="certifications-container">
-      <div class="certifications-box">
-        <a href="#" class="btn">Enterprise Data Science</a>
-        <p>Completed "Getting Started with Enterprise Data Science".</p>
-      </div>
-      <div class="certifications-box">
-        <a href="#" class="btn">Responsive Web Design</a>
-        <p>Certified in Responsive Web Design fundamentals.</p>
-      </div>
-      <div class="certifications-box">
-        <a href="#" class="btn">Journey to Cloud</a>
-        <p>Completed "Journey to Cloud: Envisioning Your Solution".</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="achievements" id="achievements">
-    <h2 class="heading">My <span>Achievements</span></h2>
-    <div class="achievements-container">
-      <div class="achievements-box">
-        <p>Improved application speed by <strong>50%</strong> through Java optimizations.</p>
-      </div>
-      <div class="achievements-box">
-        <p>Achieved <strong>90% prompt effectiveness</strong> in AI training tasks.</p>
-      </div>
-      <div class="achievements-box">
-        <p>Ranked in Math Olympiads (State Rank 390, International Rank 9360).</p>
-      </div>
-    </div>
-  </section>
-
+  <!-- Contact -->
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
+
     <form action="#">
       <div class="input-box">
         <input type="text" placeholder="Full name">
@@ -145,20 +161,32 @@
         <input type="number" placeholder="Mobile number">
         <input type="text" placeholder="Email subject">
       </div>
-      <textarea placeholder="Your message" cols="30" rows="10"></textarea>
+      <textarea cols="30" rows="10" placeholder="Your message"></textarea>
       <input type="submit" value="Send Message" class="btn">
     </form>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-text">
       <p>&copy; 2025 by Sanjay Kumar Tirumala | All rights reserved.</p>
     </div>
+
     <div class="social-media">
       <a href="https://instagram.com/sanjaykumar____23"><i class='bx bxl-instagram-alt'></i></a>
-      <a href="https://www.linkedin.com/in/sanjaykumartirumala"><i class='bx bxl-linkedin-square'></i></a>
+      <a href="https://www.linkedin.com/in/tirumala-sanjay-kumar-624369205"><i class='bx bxl-linkedin-square'></i></a>
+      <a href="https://github.com/Sanjaykumartirumala"><i class='bx bxl-github'></i></a>
     </div>
+
     <div class="footer-iconTop">
       <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="sk.js"></script>
+
+</body>
+</html>
