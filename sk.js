@@ -1,29 +1,28 @@
-// ---------- Toggle Menu ----------
+// Toggle Menu
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
   navbar.classList.toggle('active');
+  menuIcon.classList.toggle('bx-x');
 };
 
-// ---------- Scroll Reveal Animations ----------
+// ScrollReveal Animations
 ScrollReveal({
   reset: true,
-  distance: '60px',
+  distance: '80px',
   duration: 2000,
-  delay: 100
+  delay: 200
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .certifications-container, .achievements-container', { origin: 'bottom' });
-ScrollReveal().reveal('.about-img', { origin: 'left' });
-ScrollReveal().reveal('.about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-img, .certifications-container, .achievements-container, .projects ul, .contact form', { origin: 'bottom' });
 
-// ---------- Typed.js Animation ----------
+// Typed.js animation
 const typed = new Typed('.multiple-text', {
-  strings: ['Java Full Stack Developer', 'AI Trainer', 'Prompt Engineer', 'Web Developer'],
-  typeSpeed: 70,
-  backSpeed: 70,
+  strings: ['Software Developer', 'AI Trainer', 'Full Stack Engineer', 'Innovator'],
+  typeSpeed: 100,
+  backSpeed: 100,
   backDelay: 1000,
   loop: true
 });
