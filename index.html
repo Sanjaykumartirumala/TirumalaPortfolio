@@ -5,41 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sanjay Kumar Tirumala | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
-  <!-- Navbar -->
   <header>
-    <h1 class="logo">Sanjay Kumar Tirumala</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#contact">Contact</a>
+      <h1 class="logo">Sanjay Kumar Tirumala</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- About -->
   <section id="about" data-aos="fade-up">
-    <img src="assets/sk/profile.jpg" alt="Profile" class="profile-img" />
-    <div>
-      <h2>About Me</h2>
-      <p>
-        I am a passionate <b>Java Full Stack Developer</b> dedicated to building secure,
-        scalable, and high-performance applications. With expertise in <b>Spring Boot</b>,
-        <b>React.js</b>, and <b>RESTful APIs</b>, I create efficient solutions with a focus
-        on clean architecture and maintainability.
-      </p>
+    <div class="about-container">
+      <img src="assets/sk.jpg" alt="Sanjay Kumar Tirumala" class="profile-img" />
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m a passionate Java Full Stack Developer skilled in designing and building efficient,
+          scalable, and secure web applications. With strong experience in backend development using
+          Spring Boot and front-end technologies like React.js, I aim to craft elegant digital
+          experiences that merge design with functionality.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- Skills -->
   <section id="skills" data-aos="fade-up">
-    <h2>Technical Skills</h2>
+    <h2>Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">Java</div>
       <div class="skill-card">Core Java</div>
@@ -49,9 +52,10 @@
       <div class="skill-card">Agile Methodology</div>
       <div class="skill-card">SQL</div>
       <div class="skill-card">MongoDB</div>
-      <div class="skill-card">OOP</div>
+      <div class="skill-card">Object-Oriented Programming</div>
       <div class="skill-card">Unit Testing</div>
-      <div class="skill-card">CI/CD</div>
+      <div class="skill-card">Test Automation Basics</div>
+      <div class="skill-card">Continuous Integration / Deployment</div>
       <div class="skill-card">Secure Coding</div>
       <div class="skill-card">HTML5</div>
       <div class="skill-card">CSS3</div>
@@ -63,120 +67,106 @@
   <!-- Education -->
   <section id="education" data-aos="fade-up">
     <h2>Education</h2>
-    <div class="education-card">
-      <h3>B.Tech in Computer Science and Engineering</h3>
-      <p>Swarnandhra Institute of Engineering and Technology, Narsapur (2020–2024)</p>
-      <p><b>CGPA:</b> 7.63</p>
-    </div>
-    <div class="education-card">
-      <h3>Intermediate – MPC</h3>
-      <p>Sasi Junior College, Nallajerla (2018–2020)</p>
-      <p><b>CGPA:</b> 9.75</p>
-    </div>
-    <div class="education-card">
-      <h3>SSC</h3>
-      <p>Sasi English Medium School, Nallajerla (2017–2018)</p>
-      <p><b>CGPA:</b> 9.8</p>
+    <div class="education-grid">
+      <div class="edu-card">
+        <h3>B.Tech in Computer Science and Engineering</h3>
+        <p>Swarnandhra Institute of Engineering and Technology, Narsapur (2020–2024)</p>
+        <span>CGPA: 7.63</span>
+      </div>
+      <div class="edu-card">
+        <h3>12th (MPC)</h3>
+        <p>Sasi Junior College, Nallajerla (2018–2020)</p>
+        <span>GPA: 9.75</span>
+      </div>
+      <div class="edu-card">
+        <h3>10th</h3>
+        <p>Sasi English Medium School, Nallajerla (2017–2018)</p>
+        <span>GPA: 9.8</span>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Carousel -->
+  <!-- Projects -->
   <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
-    <div class="carousel" id="projectsCarousel">
+    <div class="carousel" id="projects-carousel">
       <div class="carousel-track">
         <div class="card">
-          <img src="assets/sk/securesearch.png" alt="Secure Search" />
-          <h3>Secure Search</h3>
-          <p>Java + MongoDB web app ensuring encrypted search and secure data retrieval.</p>
-          <a href="https://secure-search-cloud-1.onrender.com/" target="_blank" class="live">Live</a>
-          <a href="https://github.com/Sanjaykumartirumala/secure-search-cloud" target="_blank" class="github">GitHub</a>
+          <img src="assets/projects/securesearch.png" alt="Secure Search" />
+          <div class="card-text">
+            <h3>Secure Search</h3>
+            <p>Java-based encrypted search engine integrated with MongoDB for secure data retrieval.</p>
+            <div class="links">
+              <a href="#" target="_blank">Live</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
         </div>
         <div class="card">
-          <img src="assets/sk/hangman.png" alt="Hangman" />
-          <h3>Hangman Game</h3>
-          <p>Interactive word-guessing game with real-time validation and stylish UI.</p>
-          <a href="#" target="_blank" class="live">Live</a>
-          <a href="#" target="_blank" class="github">GitHub</a>
+          <img src="assets/projects/hangman.png" alt="Hangman" />
+          <div class="card-text">
+            <h3>Hangman Game</h3>
+            <p>Interactive word-guessing game built using JavaScript and HTML5 Canvas.</p>
+            <div class="links">
+              <a href="#" target="_blank">Live</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
         </div>
         <div class="card">
-          <img src="assets/sk/dancingrobot.png" alt="Dancing Robot" />
-          <h3>Dancing Robot</h3>
-          <p>Fun JavaScript animation project featuring an interactive dancing robot.</p>
-          <a href="#" target="_blank" class="live">Live</a>
-          <a href="#" target="_blank" class="github">GitHub</a>
+          <img src="assets/projects/dancingrobot.png" alt="Dancing Robot" />
+          <div class="card-text">
+            <h3>Dancing Robot</h3>
+            <p>Fun animated JavaScript project showcasing motion and interactivity.</p>
+            <div class="links">
+              <a href="#" target="_blank">Live</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
-      <button class="arrow left" onclick="moveSlide('projectsCarousel', -1)">&#10094;</button>
-      <button class="arrow right" onclick="moveSlide('projectsCarousel', 1)">&#10095;</button>
     </div>
   </section>
 
-  <!-- Certifications Carousel -->
+  <!-- Certifications -->
   <section id="certifications" data-aos="fade-up">
     <h2>Certifications</h2>
-    <div class="carousel" id="certCarousel">
+    <div class="carousel" id="certifications-carousel">
       <div class="carousel-track">
-        <div class="card">
-          <img src="assets/sk/cert1.jpg" alt="Certificate 1" />
-          <h3>Java Full Stack Development</h3>
-          <p>Certified by DataValley.Ai for Java Full Stack Internship.</p>
-        </div>
-        <div class="card">
-          <img src="assets/sk/cert2.jpg" alt="Certificate 2" />
-          <h3>Prompt Engineering</h3>
-          <p>Worked as a freelance Prompt Engineer for Outlier.ai</p>
-        </div>
+        <div class="card"><img src="assets/fmc.jpg" alt="FMC" /><h3>Full Stack Certification</h3></div>
+        <div class="card"><img src="assets/ml.jpg" alt="ML" /><h3>Machine Learning Basics</h3></div>
+        <div class="card"><img src="assets/web.jpg" alt="Web" /><h3>Web Development</h3></div>
       </div>
-      <button class="arrow left" onclick="moveSlide('certCarousel', -1)">&#10094;</button>
-      <button class="arrow right" onclick="moveSlide('certCarousel', 1)">&#10095;</button>
     </div>
   </section>
 
-  <!-- Achievements Carousel -->
+  <!-- Achievements -->
   <section id="achievements" data-aos="fade-up">
     <h2>Achievements</h2>
-    <div class="carousel" id="achievementsCarousel">
+    <div class="carousel" id="achievements-carousel">
       <div class="carousel-track">
-        <div class="card">
-          <img src="assets/sk/award1.jpg" alt="Award 1" />
-          <h3>Top Performer – Internship</h3>
-          <p>Recognized for exceptional performance during Java Full Stack Internship.</p>
-        </div>
-        <div class="card">
-          <img src="assets/sk/award2.jpg" alt="Award 2" />
-          <h3>Hackathon Finalist</h3>
-          <p>Reached finals in National Hackathon for AI-powered web solutions.</p>
-        </div>
+        <div class="card"><img src="assets/kwest.jpg" alt="Kwest" /><h3>Kwest Tech Event</h3></div>
+        <div class="card"><img src="assets/Silver.jpg" alt="Silver Medal" /><h3>Silver Medal - Coding Contest</h3></div>
+        <div class="card"><img src="assets/sk.jpg" alt="Portfolio Recognition" /><h3>Portfolio Showcase</h3></div>
       </div>
-      <button class="arrow left" onclick="moveSlide('achievementsCarousel', -1)">&#10094;</button>
-      <button class="arrow right" onclick="moveSlide('achievementsCarousel', 1)">&#10095;</button>
     </div>
   </section>
 
   <!-- Contact -->
   <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>📧 sanjaykumar.tirumala@gmail.com</p>
-    <p>🌐 <a href="https://github.com/Sanjaykumartirumala" target="_blank">GitHub</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/sanjaykumartirumala" target="_blank">LinkedIn</a></p>
+    <div class="contact-card">
+      <p>Email: <a href="mailto:sanjaytirumala04@gmail.com">sanjaytirumala04@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/sanjaykumartirumala" target="_blank">linkedin.com/in/sanjaykumartirumala</a></p>
+      <p>GitHub: <a href="https://github.com/sanjaykumartirumala" target="_blank">github.com/sanjaykumartirumala</a></p>
+    </div>
   </section>
 
-  <script>
-    AOS.init({ duration: 1200 });
+  <footer>
+    <p>© 2025 Sanjay Kumar Tirumala. All rights reserved.</p>
+  </footer>
 
-    // Carousel Function
-    function moveSlide(id, direction) {
-      const carousel = document.getElementById(id);
-      const track = carousel.querySelector('.carousel-track');
-      const width = carousel.offsetWidth;
-      track.scrollBy({ left: direction * width, behavior: 'smooth' });
-    }
-
-    // Auto-slide every 3s
-    document.querySelectorAll('.carousel-track').forEach(track => {
-      setInterval(() => track.scrollBy({ left: track.offsetWidth, behavior: 'smooth' }), 3000);
-    });
-  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="sk.js"></script>
 </body>
 </html>
