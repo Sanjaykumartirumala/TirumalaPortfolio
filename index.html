@@ -1,232 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanjay's Portfolio</title>
-
-  <!-- Boxicons -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjay Kumar Tirumala | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-  <!-- Header -->
-  <header class="header">
-    <a href="#" class="logo">Sanjay's Portfolio</a>
-    <i class='bx bx-menu' id="menu-icon"></i>
-
+  <!-- Navigation -->
+  <header>
     <nav class="navbar">
-      <a href="#home" class="active">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#certifications">CERTIFICATIONS</a>
-      <a href="#achievements">ACHIEVEMENTS</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
+      <div class="logo">Sanjay<span>Kumar</span></div>
+      <ul class="nav-links">
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Home -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3>Hello,</h3>
-      <h1>I'm <span>SANJAY KUMAR TIRUMALA</span></h1>
-      <h2>A <span class="multiple-text"></span></h2>
-      <p>“Things could be messy and clumsy the first time you try something. But with time, the mess starts to disappear.”</p>
-      <p>EAT · CODE · PLAY · SLEEP · REPEAT</p>
-
-      <div class="social-media">
-        <a href="https://instagram.com/sanjaykumar____23"><i class='bx bxl-instagram-alt'></i></a>
-        <a href="https://www.linkedin.com/in/tirumala-sanjay-kumar-624369205"><i class='bx bxl-linkedin-square'></i></a>
-        <a href="https://github.com/Sanjaykumartirumala"><i class='bx bxl-github'></i></a>
-      </div>
-
-      <a href="resume/TIRUMALA SANJAY KUMAR RESUME.pdf" class="btn" target="_blank">DOWNLOAD RESUME</a>
-    </div>
-
-    <div class="home-img">
-      <img src="assets/sk.jpg" alt="Sanjay Kumar Tirumala">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Sanjay Kumar Tirumala</span></h1>
+      <p>Java Full Stack Developer | Front-End & API Engineer</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
 
- <!-- About -->
-<section class="about" id="about">
-  <div class="about-img">
-    <img src="assets/sk1.jpg" alt="About Sanjay">
-  </div>
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <div class="content">
+      <p>
+        I’m an innovative <strong>Java Full Stack Developer</strong> with hands-on experience in designing and deploying
+        secure, scalable web applications. I’ve collaborated in Agile teams to build and integrate APIs, focusing on
+        performance, clean architecture, and user experience. I’m driven by a passion for efficient code, secure development,
+        and continuous learning to deliver impactful solutions.
+      </p>
+    </div>
+  </section>
 
-  <div class="about-content">
-    <h2 class="heading"><span>About</span> Me</h2>
-    <p>
-      I'm Sanjay Kumar Tirumala — an <strong>innovative Java Full Stack Developer</strong> with hands-on experience in 
-      designing, developing, and deploying full-stack web applications. I’ve successfully collaborated in Agile environments,
-      leveraging <strong>Java, Spring Boot, and React.js</strong> to build responsive, secure, and high-performance software solutions.
-      My focus lies in crafting efficient APIs, integrating databases, and ensuring code quality through automation and version control.
-    </p>
-    <p>
-      I’m now seeking a <strong>Java Software Engineer</strong> role where I can contribute to building scalable applications,
-      enhance software reliability, and drive development efficiency through <strong>robust API integration</strong> and <strong>cloud deployment</strong>.
-    </p>
+  <!-- Education -->
+  <section id="education" class="section education">
+    <h2>Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+        <p>Swarnandhra Institute of Engineering and Technology</p>
+        <span>Narsapur, India • 2020–2024</span>
+        <div class="grade">CGPA: <strong>7.63</strong></div>
+      </div>
 
-    <h2 class="heading">My <span>Skills</span></h2>
+      <div class="edu-card">
+        <h3>Intermediate (MPC)</h3>
+        <p>Sasi Junior College</p>
+        <span>Nallajerla • 2018–2020</span>
+        <div class="grade">GPA: <strong>9.75</strong></div>
+      </div>
+
+      <div class="edu-card">
+        <h3>10th Grade</h3>
+        <p>Sasi English Medium School</p>
+        <span>Nallajerla • 2017–2018</span>
+        <div class="grade">GPA: <strong>9.8</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
     <div class="skills-grid">
-      <span>Java</span>
-      <span>Core Java</span>
-      <span>Spring Boot</span>
-      <span>RESTful API Development & Integration</span>
-      <span>Git & Version Control</span>
-      <span>Agile Methodology</span>
-      <span>SQL</span>
-      <span>MongoDB</span>
-      <span>Object-Oriented Programming (OOP)</span>
-      <span>Unit Testing</span>
-      <span>Test Automation Basics</span>
-      <span>Continuous Integration/Deployment (CI/CD)</span>
-      <span>Secure Coding (Encryption, Hashing, Verification)</span>
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>JavaScript</span>
-      <span>React.js</span>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Certifications -->
-  <section class="certifications" id="certifications">
-    <h2 class="heading">My <span>Certifications</span></h2>
-    <div class="cert-grid">
-      <div class="cert-card">
-        <img src="assets/web.jpg" alt="HTML Certification">
-        <h3>HTML Certification</h3>
-        <p>Completed HTML course and certification from FreeCodeCamp.</p>
-      </div>
-      <div class="cert-card">
-        <img src="assets/FMC.jpg" alt="Mean Stack Certification">
-        <h3>MEAN Stack</h3>
-        <p>Certified in Java MEAN Stack Development by First Man Academy.</p>
-      </div>
-      <div class="cert-card">
-        <img src="assets/ml.jpg" alt="Machine Learning Certification">
-        <h3>Machine Learning</h3>
-        <p>Completed Machine Learning using Python by Verzeo.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Achievements -->
-  <section class="achievements" id="achievements">
-    <h2 class="heading">My <span>Achievements</span></h2>
-    <div class="achievements-grid">
-      <div class="ach-card">
-        <img src="assets/kwest.jpg" alt="Math Olympiad Achievement">
-        <p>Ranked 1146 in Math Olympiad conducted by KWEST Foundation.</p>
-      </div>
-      <div class="ach-card">
-        <img src="assets/Silver.jpg" alt="International Math Olympiad Achievement">
-        <p>STATE RANK 390 & INTERNATIONAL RANK 9360 in the 6th International Math Olympiad (2013).</p>
-      </div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Core Java</div>
+      <div class="skill-card">Spring Boot</div>
+      <div class="skill-card">RESTful API Development & Integration</div>
+      <div class="skill-card">Git & Version Control</div>
+      <div class="skill-card">Agile Methodology</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">Object-Oriented Programming (OOP)</div>
+      <div class="skill-card">Unit Testing</div>
+      <div class="skill-card">Test Automation Basics</div>
+      <div class="skill-card">Continuous Integration/Deployment (CI/CD)</div>
+      <div class="skill-card">Secure Coding (Encryption, Hashing, Verification)</div>
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React.js</div>
     </div>
   </section>
 
   <!-- Projects -->
-  <!-- Projects -->
-<section class="projects" id="projects">
-  <h2 class="heading">My <span>Projects</span></h2>
-
-  <div class="projects-grid">
-
-    <!-- Secure Search Project -->
-    <div class="project-card">
-      <img src="assets/projects/securesearch.png" alt="Secure Search Project">
-      <div class="project-content">
-        <h3>Secure Search</h3>
-        <p>
-          A secure web-based search portal built with <strong>Spring Boot</strong> and <strong>MongoDB</strong>.
-          Users can upload text, search for keywords, and verify content securely.
-        </p>
-        <p class="tech-stack">Java · Spring Boot · MongoDB · Thymeleaf · Render</p>
-        <div class="project-buttons">
-          <a href="https://secure-search-cloud-1.onrender.com/" target="_blank" class="btn">🔗 Live Demo</a>
-          <a href="https://github.com/SanjayKumarTirumala/secure-search-cloud" target="_blank" class="btn">💻 Source Code</a>
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      
+      <div class="project-card">
+        <img src="assets/hangman.png" alt="Hangman Game">
+        <div class="project-info">
+          <h3>🎯 Hangman Game</h3>
+          <p>An interactive JavaScript game where players guess words letter by letter, featuring smooth animations and logical feedback.</p>
         </div>
       </div>
-    </div>
 
-    <!-- Dancing Robot Project -->
-    <div class="project-card">
-      <img src="assets/projects/dancingrobot.png" alt="Dancing Robot Project">
-      <div class="project-content">
-        <h3>Dancing Robot</h3>
-        <p>
-          A fun, interactive robot animation made using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
-          The robot dances dynamically using keyframes and smooth transitions.
-        </p>
-        <p class="tech-stack">HTML · CSS · JavaScript</p>
-        <div class="project-buttons">
-          <a href="https://sanjaykumartirumala.github.io/Dancing-robot/" target="_blank" class="btn">🔗 Live Demo</a>
-          <a href="https://github.com/SanjayKumarTirumala/Dancing-robot" target="_blank" class="btn">💻 Source Code</a>
+      <div class="project-card">
+        <img src="assets/dancingrobot.png" alt="Dancing Robot">
+        <div class="project-info">
+          <h3>🤖 Dancing Robot</h3>
+          <p>A fun, dynamic CSS + JS animation showcasing a rhythmically moving robot with futuristic UI transitions.</p>
         </div>
       </div>
-    </div>
 
-    <!-- Hangman Game Project -->
-    <div class="project-card">
-      <img src="assets/projects/hangman.png" alt="Hangman Game Project">
-      <div class="project-content">
-        <h3>Hangman Game</h3>
-        <p>
-          A classic word-guessing game built with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
-          Players guess letters to reveal the hidden word before the hangman appears!
-        </p>
-        <p class="tech-stack">HTML · CSS · JavaScript</p>
-        <div class="project-buttons">
-          <a href="https://sanjaykumartirumala.github.io/Hangman-game/" target="_blank" class="btn">🔗 Live Demo</a>
-          <a href="https://github.com/SanjayKumarTirumala/Hangman-game" target="_blank" class="btn">💻 Source Code</a>
+      <div class="project-card">
+        <img src="assets/secures.png" alt="Secure Search">
+        <div class="project-info">
+          <h3>🔐 Secure Search</h3>
+          <p>Cloud-deployed Spring Boot app integrated with MongoDB for secure text upload, search, and verification.
+             <br><a href="https://secure-search-cloud-1.onrender.com/" target="_blank">Live Project</a></p>
         </div>
       </div>
+
     </div>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-    <form>
-      <div class="input-box">
-        <input type="text" placeholder="Full name" required>
-        <input type="email" placeholder="Email address" required>
-      </div>
-      <div class="input-box">
-        <input type="number" placeholder="Mobile number" required>
-        <input type="text" placeholder="Email subject" required>
-      </div>
-      <textarea cols="30" rows="10" placeholder="Your message" required></textarea>
-      <input type="submit" value="Send Message" class="btn">
-    </form>
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Let’s connect and collaborate on exciting projects!</p>
+    <div class="contact-links">
+      <a href="mailto:sanjay@example.com" class="btn">Email Me</a>
+      <a href="https://github.com/Sanjaykumartirumala" target="_blank" class="btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/sanjaykumartirumala/" target="_blank" class="btn">LinkedIn</a>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-text">
-      <p>&copy; 2025 by Sanjay Kumar Tirumala | All rights reserved.</p>
-    </div>
-    <div class="social-media">
-      <a href="https://instagram.com/sanjaykumar____23"><i class='bx bxl-instagram-alt'></i></a>
-      <a href="https://www.linkedin.com/in/tirumala-sanjay-kumar-624369205"><i class='bx bxl-linkedin-square'></i></a>
-      <a href="https://github.com/Sanjaykumartirumala"><i class='bx bxl-github'></i></a>
-    </div>
-    <div class="footer-iconTop">
-      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-    </div>
+  <footer>
+    <p>© 2025 Sanjay Kumar Tirumala | All Rights Reserved</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="sk.js"></script>
 </body>
 </html>
