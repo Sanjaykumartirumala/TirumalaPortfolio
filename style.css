@@ -168,12 +168,88 @@ section {
   margin-bottom: 10px;
 }
 
-/* Projects */
-.projects ul {
-  list-style: none;
-  line-height: 1.8;
-  font-size: 1rem;
+/* === Projects Section === */
+.projects {
+  background: #0b132b;
+  padding: 80px 9%;
+  color: #fff;
+  text-align: center;
 }
+
+.projects .heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00bfff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #1c2541;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(0, 191, 255, 0.3);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  color: #00bfff;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  margin-bottom: 1.2rem;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-buttons .btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background: #00bfff;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-buttons .btn:hover {
+  background: #0080ff;
+}
+
 
 /* Contact */
 .contact form {
