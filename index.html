@@ -25,7 +25,7 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-content">
+    <div class="hero-content fade-in">
       <h1>Hi, I'm <span>Sanjay Kumar Tirumala</span></h1>
       <p>Java Full Stack Developer | Front-End & API Engineer</p>
       <a href="#projects" class="btn">View My Work</a>
@@ -33,7 +33,7 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="section about">
+  <section id="about" class="section about fade-section">
     <h2>About Me</h2>
     <div class="content">
       <p>
@@ -46,7 +46,7 @@
   </section>
 
   <!-- Education -->
-  <section id="education" class="section education">
+  <section id="education" class="section education fade-section">
     <h2>Education</h2>
     <div class="edu-grid">
       <div class="edu-card">
@@ -73,7 +73,7 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="section skills">
+  <section id="skills" class="section skills fade-section">
     <h2>Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">Java</div>
@@ -97,7 +97,7 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="section projects">
+  <section id="projects" class="section projects fade-section">
     <h2>Projects</h2>
     <div class="projects-grid">
       
@@ -130,7 +130,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section contact">
+  <section id="contact" class="section contact fade-section">
     <h2>Contact</h2>
     <p>Let’s connect and collaborate on exciting projects!</p>
     <div class="contact-links">
@@ -144,6 +144,18 @@
     <p>© 2025 Sanjay Kumar Tirumala | All Rights Reserved</p>
   </footer>
 
-  <script src="sk.js"></script>
+  <script>
+    // === Scroll Animation ===
+    const fadeSections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    fadeSections.forEach(section => observer.observe(section));
+  </script>
 </body>
 </html>
