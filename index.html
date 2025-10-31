@@ -208,37 +208,41 @@
 
     <!-- ACHIEVEMENTS -->
     <!-- Achievements Section -->
-<section id="achievements" class="section">
-  <h2 data-aos="fade-up">Achievements</h2>
-  <div class="carousel-container" data-aos="fade-up">
-    <button class="carousel-btn left" onclick="moveSlide('achievements', -1)">&#10094;</button>
-    <div class="carousel-track achievements-track">
-      <div class="carousel-card">
+<section id="achievements" class="section" data-aos="fade-up">
+  <h2 class="section-title">Achievements</h2>
+  <div class="carousel" id="ach-carousel">
+    <button class="carousel-arrow prev">❮</button>
+    <div class="carousel-track">
+      <div class="card">
         <img src="assets/kwest.jpg" alt="Kwest Award" />
         <h3>Kwest Award</h3>
-        <p>Recognized for outstanding project presentation in technical expo.</p>
+        <p>Recognized for outstanding project presentation in a technical expo.</p>
       </div>
-      <div class="carousel-card">
+
+      <div class="card">
         <img src="assets/Silver.jpg" alt="Silver Medal of Excellence" />
         <h3>Silver Medal of Excellence</h3>
         <p>Awarded for academic performance and leadership in the department.</p>
       </div>
-      <div class="carousel-card">
-        <img src="assets/IBM1.png" alt="Journey to Cloud Badge" />
+
+      <div class="card">
+        <img src="assets/IBM1.png" alt="Journey to Cloud — IBM" />
         <h3>Journey to Cloud — IBM</h3>
         <p>Credly verified badge by IBM recognizing cloud technology expertise.</p>
-        <a href="#" class="btn">Verify Credential</a>
+        <a href="#" class="btn verify-btn" target="_blank">Verify Credential</a>
       </div>
-      <div class="carousel-card">
-        <img src="assets/IBM2.png" alt="Enterprise Data Science Badge" />
+
+      <div class="card">
+        <img src="assets/IBM2.png" alt="Enterprise Data Science — IBM" />
         <h3>Enterprise Data Science — IBM</h3>
         <p>IBM verified badge for completing Enterprise Data Science training.</p>
-        <a href="#" class="btn">Verify Credential</a>
+        <a href="#" class="btn verify-btn" target="_blank">Verify Credential</a>
       </div>
     </div>
-    <button class="carousel-btn right" onclick="moveSlide('achievements', 1)">&#10095;</button>
+    <button class="carousel-arrow next">❯</button>
   </div>
 </section>
+
 
 
     <!-- CONTACT -->
