@@ -126,3 +126,20 @@ a{color:var(--accent)}
   .hero-desc{font-size:0.95rem}
   .project-card{min-width:88%}
 }
+.verify-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: linear-gradient(90deg, #0078ff, #00c4ff);
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.verify-btn:hover {
+  background: linear-gradient(90deg, #00c4ff, #0078ff);
+  transform: translateY(-2px);
+}
+
