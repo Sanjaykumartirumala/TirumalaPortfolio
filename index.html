@@ -207,51 +207,36 @@
     </section>
 
     <!-- ACHIEVEMENTS -->
-    <section id="achievements" class="section">
+    <!-- Achievements Section -->
+<section id="achievements" class="section">
   <h2 data-aos="fade-up">Achievements</h2>
   <div class="carousel-container" data-aos="fade-up">
-    <button class="carousel-btn prev" onclick="scrollCarousel('achievements', -1)">&#10094;</button>
-    <div class="carousel" id="achievements-carousel">
-      
-      <div class="card project-card">
+    <button class="carousel-btn left" onclick="moveSlide('achievements', -1)">&#10094;</button>
+    <div class="carousel-track achievements-track">
+      <div class="carousel-card">
         <img src="assets/kwest.jpg" alt="Kwest Award" />
-        <div class="card-body">
-          <h4>Kwest Award</h4>
-          <p class="muted">Recognized for outstanding project presentation in technical expo.</p>
-        </div>
+        <h3>Kwest Award</h3>
+        <p>Recognized for outstanding project presentation in technical expo.</p>
       </div>
-
-      <div class="card project-card">
-        <img src="assets/Silver.jpg" alt="Silver Medal" />
-        <div class="card-body">
-          <h4>Silver Medal of Excellence</h4>
-          <p class="muted">Awarded for academic performance and leadership in the department.</p>
-        </div>
+      <div class="carousel-card">
+        <img src="assets/Silver.jpg" alt="Silver Medal of Excellence" />
+        <h3>Silver Medal of Excellence</h3>
+        <p>Awarded for academic performance and leadership in the department.</p>
       </div>
-
-      <!-- ✅ New IBM Verified Badges -->
-      <div class="card project-card">
-        <img src="assets/ibm1.png" alt="Journey to Cloud Badge" />
-        <div class="card-body">
-          <h4>Journey to Cloud — IBM</h4>
-          <p class="muted">Credly verified badge by IBM recognizing cloud technology expertise.</p>
-          <a href="https://www.credly.com/badges/c3078783-9440-4232-a9e3-1583574a7e8e/linked_in?t=s9tggv" 
-             target="_blank" class="verify-btn">Verify Credential</a>
-        </div>
+      <div class="carousel-card">
+        <img src="assets/ml.jpg" alt="Journey to Cloud Badge" />
+        <h3>Journey to Cloud — IBM</h3>
+        <p>Credly verified badge by IBM recognizing cloud technology expertise.</p>
+        <a href="#" class="btn">Verify Credential</a>
       </div>
-
-      <div class="card project-card">
-        <img src="assets/ibm2.png" alt="Enterprise Data Science Badge" />
-        <div class="card-body">
-          <h4>Enterprise Data Science — IBM</h4>
-          <p class="muted">IBM verified badge for completing Enterprise Data Science training.</p>
-          <a href="https://www.credly.com/badges/1036c0b2-9a02-49e4-a926-2a76ecda2c55/linked_in?t=s9tfix" 
-             target="_blank" class="verify-btn">Verify Credential</a>
-        </div>
+      <div class="carousel-card">
+        <img src="assets/web.jpg" alt="Enterprise Data Science Badge" />
+        <h3>Enterprise Data Science — IBM</h3>
+        <p>IBM verified badge for completing Enterprise Data Science training.</p>
+        <a href="#" class="btn">Verify Credential</a>
       </div>
-
     </div>
-    <button class="carousel-btn next" onclick="scrollCarousel('achievements', 1)">&#10095;</button>
+    <button class="carousel-btn right" onclick="moveSlide('achievements', 1)">&#10095;</button>
   </div>
 </section>
 
