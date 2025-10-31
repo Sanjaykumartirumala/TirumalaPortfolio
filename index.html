@@ -207,40 +207,54 @@
     </section>
 
     <!-- ACHIEVEMENTS -->
-    <section id="achievements" class="section" data-aos="fade-up">
-      <h2 class="section-title">Achievements</h2>
-
-      <div class="carousel" id="ach-carousel">
-        <div class="carousel-track">
-          <div class="card project-card">
-            <img src="assets/kwest.jpg" alt="Kwest" />
-            <div class="card-body">
-              <h4>KWEST Math Olympiad</h4>
-              <p class="muted">Ranked 1146 in KWEST Foundation Math Olympiad.</p>
-            </div>
-          </div>
-
-          <div class="card project-card">
-            <img src="assets/Silver.jpg" alt="Silver" />
-            <div class="card-body">
-              <h4>International Math Olympiad</h4>
-              <p class="muted">State Rank 390 & International Rank 9360 (6th IMO).</p>
-            </div>
-          </div>
-
-          <div class="card project-card">
-            <img src="assets/sk1.jpg" alt="Participation" />
-            <div class="card-body">
-              <h4>Tech Events & Hackathons</h4>
-              <p class="muted">Active participant & organizer in college tech events.</p>
-            </div>
-          </div>
+    <section id="achievements" class="section">
+  <h2 data-aos="fade-up">Achievements</h2>
+  <div class="carousel-container" data-aos="fade-up">
+    <button class="carousel-btn prev" onclick="scrollCarousel('achievements', -1)">&#10094;</button>
+    <div class="carousel" id="achievements-carousel">
+      
+      <div class="card project-card">
+        <img src="assets/kwest.jpg" alt="Kwest Award" />
+        <div class="card-body">
+          <h4>Kwest Award</h4>
+          <p class="muted">Recognized for outstanding project presentation in technical expo.</p>
         </div>
-
-        <button class="carousel-arrow prev" data-target="ach-carousel" aria-label="Previous">&#10094;</button>
-        <button class="carousel-arrow next" data-target="ach-carousel" aria-label="Next">&#10095;</button>
       </div>
-    </section>
+
+      <div class="card project-card">
+        <img src="assets/Silver.jpg" alt="Silver Medal" />
+        <div class="card-body">
+          <h4>Silver Medal of Excellence</h4>
+          <p class="muted">Awarded for academic performance and leadership in the department.</p>
+        </div>
+      </div>
+
+      <!-- ✅ New IBM Verified Badges -->
+      <div class="card project-card">
+        <img src="assets/ibm1.png" alt="Journey to Cloud Badge" />
+        <div class="card-body">
+          <h4>Journey to Cloud — IBM</h4>
+          <p class="muted">Credly verified badge by IBM recognizing cloud technology expertise.</p>
+          <a href="https://www.credly.com/badges/c3078783-9440-4232-a9e3-1583574a7e8e/linked_in?t=s9tggv" 
+             target="_blank" class="verify-btn">Verify Credential</a>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <img src="assets/ibm2.png" alt="Enterprise Data Science Badge" />
+        <div class="card-body">
+          <h4>Enterprise Data Science — IBM</h4>
+          <p class="muted">IBM verified badge for completing Enterprise Data Science training.</p>
+          <a href="https://www.credly.com/badges/1036c0b2-9a02-49e4-a926-2a76ecda2c55/linked_in?t=s9tfix" 
+             target="_blank" class="verify-btn">Verify Credential</a>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-btn next" onclick="scrollCarousel('achievements', 1)">&#10095;</button>
+  </div>
+</section>
+
 
     <!-- CONTACT -->
     <section id="contact" class="section" data-aos="fade-up">
