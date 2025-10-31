@@ -4,170 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sanjay Kumar Tirumala | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src ="sk.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
 </head>
 <body>
   <header>
+    <h1 class="logo" data-aos="fade-down">Sanjay Kumar Tirumala</h1>
     <nav>
-      <h1 class="logo">Sanjay Kumar Tirumala</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- About -->
-  <section id="about" data-aos="fade-up">
-    <div class="about-container">
-      <img src="assets/sk.jpg" alt="Sanjay Kumar Tirumala" class="profile-img" />
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>
-          I’m a passionate Java Full Stack Developer skilled in designing and building efficient,
-          scalable, and secure web applications. With strong experience in backend development using
-          Spring Boot and front-end technologies like React.js, I aim to craft elegant digital
-          experiences that merge design with functionality.
-        </p>
-      </div>
-    </div>
+  <section class="hero" data-aos="fade-up">
+    <img src="assets/sk.jpg" alt="Sanjay Kumar Tirumala" class="profile-pic">
+    <h2>Java Full Stack Developer | Frontend Enthusiast</h2>
+    <p>Building efficient, scalable, and visually engaging web applications.</p>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" data-aos="fade-up">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">Java</div>
-      <div class="skill-card">Core Java</div>
-      <div class="skill-card">Spring Boot</div>
-      <div class="skill-card">RESTful API Development</div>
-      <div class="skill-card">Git & Version Control</div>
-      <div class="skill-card">Agile Methodology</div>
-      <div class="skill-card">SQL</div>
-      <div class="skill-card">MongoDB</div>
-      <div class="skill-card">Object-Oriented Programming</div>
-      <div class="skill-card">Unit Testing</div>
-      <div class="skill-card">Test Automation Basics</div>
-      <div class="skill-card">Continuous Integration / Deployment</div>
-      <div class="skill-card">Secure Coding</div>
-      <div class="skill-card">HTML5</div>
-      <div class="skill-card">CSS3</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">React.js</div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" data-aos="fade-up">
+  <section id="education" class="section" data-aos="fade-up">
     <h2>Education</h2>
-    <div class="education-grid">
-      <div class="edu-card">
-        <h3>B.Tech in Computer Science and Engineering</h3>
-        <p>Swarnandhra Institute of Engineering and Technology, Narsapur (2020–2024)</p>
-        <span>CGPA: 7.63</span>
-      </div>
-      <div class="edu-card">
-        <h3>12th (MPC)</h3>
-        <p>Sasi Junior College, Nallajerla (2018–2020)</p>
-        <span>GPA: 9.75</span>
-      </div>
-      <div class="edu-card">
-        <h3>10th</h3>
-        <p>Sasi English Medium School, Nallajerla (2017–2018)</p>
-        <span>GPA: 9.8</span>
-      </div>
+    <div class="edu-card">
+      <h3>B.Tech in Computer Science and Engineering</h3>
+      <p>Swarnandhra Institute of Engineering and Technology • 2020–2024 • 7.63 CGPA</p>
+    </div>
+    <div class="edu-card">
+      <h3>12th - MPC</h3>
+      <p>Sasi Junior College • Nallajerla • 2018–2020 • 9.75 GPA</p>
+    </div>
+    <div class="edu-card">
+      <h3>10th</h3>
+      <p>Sasi English Medium School • Nallajerla • 2017–2018 • 9.8 GPA</p>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" data-aos="fade-up">
+  <section id="projects" class="section" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="carousel" id="projects-carousel">
-      <div class="carousel-track">
-        <div class="card">
-          <img src="assets/projects/securesearch.png" alt="Secure Search" />
-          <div class="card-text">
-            <h3>Secure Search</h3>
-            <p>Java-based encrypted search engine integrated with MongoDB for secure data retrieval.</p>
-            <div class="links">
-              <a href="#" target="_blank">Live</a>
-              <a href="#" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/projects/hangman.png" alt="Hangman" />
-          <div class="card-text">
-            <h3>Hangman Game</h3>
-            <p>Interactive word-guessing game built using JavaScript and HTML5 Canvas.</p>
-            <div class="links">
-              <a href="#" target="_blank">Live</a>
-              <a href="#" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/projects/dancingrobot.png" alt="Dancing Robot" />
-          <div class="card-text">
-            <h3>Dancing Robot</h3>
-            <p>Fun animated JavaScript project showcasing motion and interactivity.</p>
-            <div class="links">
-              <a href="#" target="_blank">Live</a>
-              <a href="#" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
+      <div class="card">
+        <img src="assets/projects/securesearch.png" alt="Secure Search" />
+        <h3>Secure Search</h3>
+        <p>Java-based search system integrating MongoDB and Spring Boot with secure text verification.</p>
+        <a href="https://secure-search-cloud-1.onrender.com/" target="_blank">🔗 Live Demo</a>
+        <a href="https://github.com/sanjaykumartirumala/secure-search-cloud" target="_blank">💻 GitHub</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/projects/hangman.png" alt="Hangman Game" />
+        <h3>Hangman Game</h3>
+        <p>Interactive Hangman built with HTML, CSS, and JavaScript for engaging word challenges.</p>
+        <a href="https://sanjaykumartirumala.github.io/hangman/" target="_blank">🔗 Live Demo</a>
+        <a href="https://github.com/sanjaykumartirumala/hangman" target="_blank">💻 GitHub</a>
+      </div>
+
+      <div class="card">
+        <img src="assets/projects/dancingrobot.png" alt="Dancing Robot" />
+        <h3>Dancing Robot Animation</h3>
+        <p>Fun CSS & JS-based animated robot synced to beats — creativity meets motion!</p>
+        <a href="https://sanjaykumartirumala.github.io/dancingrobot/" target="_blank">🔗 Live Demo</a>
+        <a href="https://github.com/sanjaykumartirumala/dancingrobot" target="_blank">💻 GitHub</a>
       </div>
     </div>
   </section>
 
-  <!-- Certifications -->
-  <section id="certifications" data-aos="fade-up">
+  <section id="certifications" class="section" data-aos="fade-up">
     <h2>Certifications</h2>
     <div class="carousel" id="certifications-carousel">
-      <div class="carousel-track">
-        <div class="card"><img src="assets/fmc.jpg" alt="FMC" /><h3>Full Stack Certification</h3></div>
-        <div class="card"><img src="assets/ml.jpg" alt="ML" /><h3>Machine Learning Basics</h3></div>
-        <div class="card"><img src="assets/web.jpg" alt="Web" /><h3>Web Development</h3></div>
-      </div>
+      <div class="card"><img src="assets/FMC.jpg" alt="FMC" /><p>Full Stack Web Development</p></div>
+      <div class="card"><img src="assets/ml.jpg" alt="Machine Learning" /><p>Machine Learning Basics</p></div>
+      <div class="card"><img src="assets/web.jpg" alt="Web Design" /><p>Responsive Web Design</p></div>
     </div>
   </section>
 
-  <!-- Achievements -->
-  <section id="achievements" data-aos="fade-up">
+  <section id="achievements" class="section" data-aos="fade-up">
     <h2>Achievements</h2>
     <div class="carousel" id="achievements-carousel">
-      <div class="carousel-track">
-        <div class="card"><img src="assets/kwest.jpg" alt="Kwest" /><h3>Kwest Tech Event</h3></div>
-        <div class="card"><img src="assets/Silver.jpg" alt="Silver Medal" /><h3>Silver Medal - Coding Contest</h3></div>
-        <div class="card"><img src="assets/sk.jpg" alt="Portfolio Recognition" /><h3>Portfolio Showcase</h3></div>
-      </div>
+      <div class="card"><img src="assets/kwest.jpg" alt="Kwest Hackathon"><p>Finalist at Kwest Hackathon</p></div>
+      <div class="card"><img src="assets/Silver.jpg" alt="Silver Medal"><p>Silver Medal in Coding Challenge</p></div>
+      <div class="card"><img src="assets/sk1.jpg" alt="Event Organizer"><p>Organized Tech Events at College</p></div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" data-aos="fade-up">
+  <footer id="contact" class="section" data-aos="fade-up">
     <h2>Contact</h2>
-    <div class="contact-card">
-      <p>Email: <a href="mailto:sanjaytirumala04@gmail.com">sanjaytirumala04@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/sanjaykumartirumala" target="_blank">linkedin.com/in/sanjaykumartirumala</a></p>
-      <p>GitHub: <a href="https://github.com/sanjaykumartirumala" target="_blank">github.com/sanjaykumartirumala</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Sanjay Kumar Tirumala. All rights reserved.</p>
+    <p>📧 sanjaykumar231tirumala@gmail.com</p>
+    <p>🌐 <a href="https://github.com/sanjaykumartirumala" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/sanjaykumartirumala/" target="_blank">LinkedIn</a></p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- AOS + JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="sk.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
 </body>
 </html>
