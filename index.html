@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <!-- Fixed header -->
+  <!-- HEADER -->
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a class="logo" href="#home">Sanjay Kumar Tirumala</a>
@@ -29,12 +29,13 @@
         <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open menu">
+      <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle menu">
         <i class='bx bx-menu'></i>
       </button>
     </div>
   </header>
 
+  <!-- MAIN -->
   <main id="home">
     <!-- HERO -->
     <section class="section hero" data-aos="fade-up">
@@ -122,49 +123,46 @@
       </div>
     </section>
 
-    <!-- PROJECTS (carousel) -->
+    <!-- PROJECTS -->
     <section id="projects" class="section" data-aos="fade-up">
       <h2 class="section-title">Projects</h2>
-
       <div class="carousel" id="proj-carousel">
         <div class="carousel-track">
-          <div class="project-card card">
-            <img src="assets/projects/securesearch.png" alt="Secure Search" />
-            <div class="card-body">
-              <h4>Secure Search</h4>
-              <p class="muted">Spring Boot + MongoDB portal — encrypted uploads, keyword search and verification.</p>
-              <div class="card-actions">
-                <a class="btn primary" href="https://secure-search-cloud-1.onrender.com/" target="_blank">Live Demo</a>
-                <a class="btn" href="https://github.com/SanjayKumarTirumala/secure-search-cloud" target="_blank">Source</a>
-              </div>
+
+          <!-- Secure Search -->
+          <div class="carousel-card">
+            <img src="assets/projects/securesearch.png" alt="Secure Search">
+            <h3>Secure Search</h3>
+            <p>Spring Boot + MongoDB portal — encrypted uploads, keyword search and verification.</p>
+            <div class="btn-container">
+              <a class="btn" href="https://secure-search-cloud-1.onrender.com/" target="_blank">Live Demo</a>
+              <a class="btn" href="https://github.com/SanjayKumarTirumala/secure-search-cloud" target="_blank">Source</a>
             </div>
           </div>
 
-          <div class="project-card card">
-            <img src="assets/projects/dancingrobot.png" alt="Dancing Robot" />
-            <div class="card-body">
-              <h4>Dancing Robot</h4>
-              <p class="muted">Interactive CSS & JS robot — hover to animate, playful UI interactions.</p>
-              <div class="card-actions">
-                <a class="btn primary" href="https://sanjaykumartirumala.github.io/Dancing-robot/" target="_blank">Live Demo</a>
-                <a class="btn" href="https://github.com/SanjayKumarTirumala/Dancing-robot" target="_blank">Source</a>
-              </div>
+          <!-- Dancing Robot -->
+          <div class="carousel-card">
+            <img src="assets/projects/dancingrobot.png" alt="Dancing Robot">
+            <h3>Dancing Robot</h3>
+            <p>Interactive CSS & JS robot — hover to animate, playful UI interactions.</p>
+            <div class="btn-container">
+              <a class="btn" href="https://sanjaykumartirumala.github.io/Dancing-robot/" target="_blank">Live Demo</a>
+              <a class="btn" href="https://github.com/SanjayKumarTirumala/Dancing-robot" target="_blank">Source</a>
             </div>
           </div>
 
-          <div class="project-card card">
-            <img src="assets/projects/hangman.png" alt="Hangman" />
-            <div class="card-body">
-              <h4>Hangman Game</h4>
-              <p class="muted">Classic word-guessing game built with HTML/CSS/JS — fun and educational.</p>
-              <div class="card-actions">
-                <a class="btn primary" href="https://sanjaykumartirumala.github.io/Hangman-game/" target="_blank">Live Demo</a>
-                <a class="btn" href="https://github.com/SanjayKumarTirumala/Hangman-game" target="_blank">Source</a>
-              </div>
+          <!-- Hangman -->
+          <div class="carousel-card">
+            <img src="assets/projects/hangman.png" alt="Hangman Game">
+            <h3>Hangman Game</h3>
+            <p>Classic word-guessing game built with HTML/CSS/JS — fun and educational.</p>
+            <div class="btn-container">
+              <a class="btn" href="https://sanjaykumartirumala.github.io/Hangman-game/" target="_blank">Live Demo</a>
+              <a class="btn" href="https://github.com/SanjayKumarTirumala/Hangman-game" target="_blank">Source</a>
             </div>
           </div>
+
         </div>
-
         <button class="carousel-arrow prev" data-target="proj-carousel" aria-label="Previous">&#10094;</button>
         <button class="carousel-arrow next" data-target="proj-carousel" aria-label="Next">&#10095;</button>
       </div>
@@ -173,31 +171,24 @@
     <!-- CERTIFICATIONS -->
     <section id="certifications" class="section" data-aos="fade-up">
       <h2 class="section-title">Certifications</h2>
-
       <div class="carousel" id="cert-carousel">
         <div class="carousel-track">
-          <div class="card project-card">
-            <img src="assets/FMC.jpg" alt="FMC / MEAN Stack" />
-            <div class="card-body">
-              <h4>MEAN Stack</h4>
-              <p class="muted">Certification: MEAN Stack training (First Man Academy).</p>
-            </div>
+          <div class="carousel-card">
+            <img src="assets/FMC.jpg" alt="MEAN Stack">
+            <h3>MEAN Stack</h3>
+            <p>Certification: MEAN Stack training (First Man Academy).</p>
           </div>
 
-          <div class="card project-card">
-            <img src="assets/ml.jpg" alt="Machine Learning" />
-            <div class="card-body">
-              <h4>Machine Learning</h4>
-              <p class="muted">Course: Machine Learning using Python (Verzeo).</p>
-            </div>
+          <div class="carousel-card">
+            <img src="assets/ml.jpg" alt="Machine Learning">
+            <h3>Machine Learning</h3>
+            <p>Course: Machine Learning using Python (Verzeo).</p>
           </div>
 
-          <div class="card project-card">
-            <img src="assets/web.jpg" alt="Web Development" />
-            <div class="card-body">
-              <h4>Web Development</h4>
-              <p class="muted">Responsive Web & HTML certification.</p>
-            </div>
+          <div class="carousel-card">
+            <img src="assets/web.jpg" alt="Web Development">
+            <h3>Web Development</h3>
+            <p>Responsive Web & HTML certification.</p>
           </div>
         </div>
 
@@ -207,65 +198,58 @@
     </section>
 
     <!-- ACHIEVEMENTS -->
-    <!-- Achievements Section -->
-<section id="achievements" class="section" data-aos="fade-up">
-  <h2 class="section-title">Achievements</h2>
-  <div class="carousel" id="ach-carousel">
-    <button class="carousel-arrow prev">❮</button>
-    <div class="carousel-track">
-      <div class="card">
-        <img src="assets/kwest.jpg" alt="Kwest Award" />
-        <h3>Kwest Award</h3>
-        <p>Recognized for outstanding project presentation in a technical expo.</p>
+    <section id="achievements" class="section" data-aos="fade-up">
+      <h2 class="section-title">Achievements</h2>
+      <div class="carousel" id="ach-carousel">
+        <button class="carousel-arrow prev">❮</button>
+        <div class="carousel-track">
+          <div class="carousel-card">
+            <img src="assets/kwest.jpg" alt="Kwest Award">
+            <h3>Kwest Award</h3>
+            <p>Recognized for outstanding project presentation in a technical expo.</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="assets/Silver.jpg" alt="Silver Medal of Excellence">
+            <h3>Silver Medal of Excellence</h3>
+            <p>Awarded for academic performance and leadership in the department.</p>
+          </div>
+
+          <div class="carousel-card">
+            <img src="assets/IBM1.png" alt="Journey to Cloud — IBM">
+            <h3>Journey to Cloud — IBM</h3>
+            <p>Credly verified badge by IBM recognizing cloud technology expertise.</p>
+            <a href="#" class="btn" target="_blank">Verify Credential</a>
+          </div>
+
+          <div class="carousel-card">
+            <img src="assets/IBM2.png" alt="Enterprise Data Science — IBM">
+            <h3>Enterprise Data Science — IBM</h3>
+            <p>IBM verified badge for completing Enterprise Data Science training.</p>
+            <a href="#" class="btn" target="_blank">Verify Credential</a>
+          </div>
+        </div>
+        <button class="carousel-arrow next">❯</button>
       </div>
-
-      <div class="card">
-        <img src="assets/Silver.jpg" alt="Silver Medal of Excellence" />
-        <h3>Silver Medal of Excellence</h3>
-        <p>Awarded for academic performance and leadership in the department.</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/IBM1.png" alt="Journey to Cloud — IBM" />
-        <h3>Journey to Cloud — IBM</h3>
-        <p>Credly verified badge by IBM recognizing cloud technology expertise.</p>
-        <a href="#" class="btn verify-btn" target="_blank">Verify Credential</a>
-      </div>
-
-      <div class="card">
-        <img src="assets/IBM2.png" alt="Enterprise Data Science — IBM" />
-        <h3>Enterprise Data Science — IBM</h3>
-        <p>IBM verified badge for completing Enterprise Data Science training.</p>
-        <a href="#" class="btn verify-btn" target="_blank">Verify Credential</a>
-      </div>
-    </div>
-    <button class="carousel-arrow next">❯</button>
-  </div>
-</section>
-
-
+    </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section" data-aos="fade-up">
       <h2 class="section-title">Contact</h2>
-
       <div class="contact-grid">
         <div class="contact-card">
           <label>Name</label>
-          <input type="text" placeholder="Your name" />
+          <input type="text" placeholder="Your name">
         </div>
-
         <div class="contact-card">
           <label>Email</label>
-          <input type="email" placeholder="you@example.com" />
+          <input type="email" placeholder="you@example.com">
         </div>
-
         <div class="contact-card full">
           <label>Message</label>
           <textarea rows="5" placeholder="Your message..."></textarea>
         </div>
       </div>
-
       <div class="contact-actions">
         <button class="btn primary">Send Message</button>
         <p class="muted">Or email me: <a href="mailto:sanjaykumar231tirumala@gmail.com">sanjaykumar231tirumala@gmail.com</a></p>
@@ -273,20 +257,20 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <p class="muted">© 2025 — Sanjay Kumar Tirumala. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scroll-to-top -->
+  <!-- SCROLL TO TOP -->
   <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top"><i class='bx bx-up-arrow-alt'></i></button>
 
-  <!-- Scripts -->
+  <!-- JS -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="sk.js" defer></script>
   <script>
-    // Init AOS (safely if library loaded)
     if (typeof AOS !== 'undefined') {
       AOS.init({ duration: 800, once: true, easing: 'ease-in-out' });
     }
