@@ -295,3 +295,117 @@ a:hover { color: #6ed3ff; }
   .hero-desc { font-size: 0.9rem; }
   .project-card { min-width: 88%; }
 }
+
+/* ===== Achievements Carousel ===== */
+#achievements {
+  margin-top: 80px;
+  text-align: center;
+}
+
+#achievements .carousel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#achievements .carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+}
+
+#achievements .card {
+  flex: 0 0 280px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 15px rgba(0, 180, 255, 0.1);
+  text-align: center;
+}
+
+#achievements .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 180, 255, 0.25);
+}
+
+#achievements img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#achievements h3 {
+  color: #00b4ff;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+#achievements p {
+  font-size: 0.9rem;
+  color: #cfe8ff;
+  margin-bottom: 10px;
+}
+
+.verify-btn {
+  background: transparent;
+  border: 1px solid #00b4ff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #00b4ff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.verify-btn:hover {
+  background: #00b4ff;
+  color: #fff;
+}
+
+/* Arrows */
+#achievements .carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 180, 255, 0.15);
+  border: 1px solid rgba(0, 180, 255, 0.4);
+  color: #00b4ff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 8px 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#achievements .carousel-arrow:hover {
+  background: rgba(0, 180, 255, 0.35);
+  box-shadow: 0 0 15px rgba(0, 180, 255, 0.5);
+}
+
+#achievements .carousel-arrow.prev {
+  left: 10px;
+}
+
+#achievements .carousel-arrow.next {
+  right: 10px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #achievements .card {
+    flex: 0 0 85%;
+  }
+  #achievements .carousel-arrow {
+    font-size: 1.5rem;
+    padding: 6px 9px;
+  }
+}
